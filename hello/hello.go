@@ -1,5 +1,12 @@
-package hello
+package main
 
-func Hello() string {
-	return "Hello, world!"
+import (
+	"fmt"
+
+	"github.com/nor1c/go-play/greetings"
+)
+
+func main() {
+	message := greetings.Hello("Fauzi")
+	fmt.Println(message)
 }
