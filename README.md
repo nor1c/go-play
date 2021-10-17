@@ -2,6 +2,7 @@
 - [Resource for learning](https://github.com/nor1c/go-play#-resource-for-learning)
 - [Go package](https://github.com/nor1c/go-play#-go-package)
 - [Go verbs (fmt)](https://github.com/nor1c/go-play#-go-verbs)
+- [Misc](https://github.com/nor1c/go-play#-misc)
 
 ### # Resource for learning
 - https://gobyexample.com/
@@ -25,5 +26,7 @@ Alternatively you can use `go mod tidy` for auto-installing required packages.
 
 https://pkg.go.dev/fmt
 
-### # Slice
+<hr>
+
+### # Misc
 - Detailed introduction to slice: https://go.dev/blog/slices-intro
