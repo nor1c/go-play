@@ -24,3 +24,6 @@ Alternatively you can use `go mod tidy` for auto-installing required packages.
 ### # Go Verbs
 
 https://pkg.go.dev/fmt
+
+### # Slice
+- Detailed introduction to slice: https://go.dev/blog/slices-intro
