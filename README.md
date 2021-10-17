@@ -5,6 +5,7 @@
 
 ### # Resource for learning
 - https://gobyexample.com/
+- https://tour.golang.org/
 
 <hr>
 
