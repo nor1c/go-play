@@ -7,7 +7,7 @@ func main() {
 	fmt.Println("arr:", arr)
 
 	fmt.Println("length of arr:", len(arr))
-	for i := 1; i < len(arr); i++ {
+	for i := 0; i < len(arr); i++ {
 		fmt.Println(arr[i])
 	}
 
