@@ -9,7 +9,7 @@ func main() {
 	i, j := 42, 1000
 
 	p := &i         // 0xc00001e098 (pointer)
-	fmt.Println(*p) // read i through pointer
+	fmt.Println(*p) // 42 (read i through pointer)
 
 	*p = 21            // set i through pointer
 	fmt.Println(p, *p) // 0xc0000a...., 21
@@ -29,7 +29,7 @@ func main() {
 	fmt.Println(xx)  // 42
 	fmt.Println(&xx) // memory address of `xx`
 
-	var pp *int     // declare a pointer variable that can store the memory address of an integer variable
+	var pp *int     // <nil> (declare a pointer variable that can store the memory address of an integer variable)
 	fmt.Println(pp) // nil
 
 	pp = &xx         // assign the memory address of `xx` to pointer `pp`

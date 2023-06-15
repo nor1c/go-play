@@ -20,4 +20,11 @@ func main() {
 	fmt.Println(int64(d), reflect.TypeOf(int64(d))) // 60000000000000000, int64
 
 	fmt.Println(math.Sin(n), reflect.TypeOf(math.Sin(n))) // -0.9879.. float64
+
+	const (
+		x = 2
+		y = 3
+	)
+	x = 4             // error: cannot assign to x (untyped int constant 2)
+	fmt.Println(x, y) // 2 3
 }

@@ -40,7 +40,10 @@ func main() {
 	sc = append(sc, 4)
 	fmt.Println("expanded capacity of sc:", cap(sc)) // 6
 
-	// copy a slice
+	sc = append(sc, 5, 6) // current capacity: 6
+	sc = append(sc, 7)    // current capacity: 12. No more space, so it will expand its size, and doubled from last capacity size which is 6
+
+	// copying a slice
 	c := make([]string, len(s)) // empty slice with the same length as 's'
 	copy(c, s)
 	fmt.Println("copy of s:", c) // [first second third fourth fifth sixth]

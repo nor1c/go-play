@@ -24,4 +24,11 @@ func main() {
 		}
 		fmt.Println(n) // 1, 3, 5
 	}
+
+	// init and post statement are optional
+	ii := 1
+	for ii < 1000 { // same as `for ; ii < 1000;`
+		ii += ii
+	}
+	fmt.Println("ii:", ii) // 1024
 }

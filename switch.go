@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 	"time"
 )
 
@@ -28,6 +29,14 @@ func main() {
 		fmt.Println("It's the weekend")
 	default:
 		fmt.Println("It's a weekday")
+	}
+
+	// switch with variable declaration
+	switch os := runtime.GOOS; os {
+	case "darwing":
+		fmt.Println("OS X")
+	default:
+		fmt.Println("Linux/Windows")
 	}
 
 	// switch without an expression

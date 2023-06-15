@@ -20,4 +20,22 @@ func main() {
 	} else {
 		fmt.Println(num, "has multiple digits")
 	} // 9 has 1 digit
+
+	// variable declaration in a if statement
+	if a := 5; a < 6 {
+		fmt.Printf("a (%d) is less than 6\n", a)
+	} else {
+		fmt.Printf("a (%d) is bigger than 6\n", a)
+	}
+
+	fmt.Println("Is 5 even?", isPositiveEven(5))
+	fmt.Println("Is 6 even?", isPositiveEven(6))
+}
+
+// example of variable declaration in a statement
+func isPositiveEven(n int) bool {
+	if isPositive, isEven := n > 0, n%2 == 0; isPositive && isEven {
+		return true
+	}
+	return false
 }
