@@ -14,4 +14,8 @@ func main() {
 
 	var xs = string(x)
 	fmt.Printf("Type of xs: %T", xs) // string
+
+	var decimalNumber = 3.63
+	fmt.Printf("%.3f\n", decimalNumber) // 3.630
+	fmt.Printf("%.6f\n", decimalNumber) // 3.630000
 }

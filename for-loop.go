@@ -31,4 +31,25 @@ func main() {
 		ii += ii
 	}
 	fmt.Println("ii:", ii) // 1024
+
+	//
+	// Outerloop (exit or stop the loop on nested loop)
+outerLoop:
+	for i := 1; i < 5; i++ {
+		for j := 1; j < 5; j++ {
+			if i == 2 && j == 2 {
+				break outerLoop
+			}
+			fmt.Println(i, j)
+		}
+	}
+	/*
+		output:
+		1 1
+		1 2
+		1 3
+		1 4
+		2 1
+		// stopped when i is 2 and j is 2, so it won't print the 2 2
+	*/
 }
